@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cgl6bk1o5umxs"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_s45dl"]
+
+[node name="Game_World" type="Node3D" unique_id=1239723126]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=575215204]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D" unique_id=565715734]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+size = Vector3(20, 0.2, 20)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1627606807]
+shape = SubResource("WorldBoundaryShape3D_s45dl")
